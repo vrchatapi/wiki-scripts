@@ -1,49 +1,52 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
-  "compilerOptions": {
-    // File Layout
-    // "rootDir": "./src",
-    // "outDir": "./dist",
+	// Visit https://aka.ms/tsconfig to read more about this file
+	"compilerOptions": {
+		"target": "esnext",
+		"jsx": "react-jsx",
+		"moduleDetection": "force",
+		// File Layout
+		// "rootDir": "./src",
+		// "outDir": "./dist",
 
-    // Environment Settings
-    // See also https://aka.ms/tsconfig/module
-    "module": "preserve",
-    "moduleResolution": "bundler",
-    "target": "esnext",
-    "types": [
-      "vite/client",
-      "@types/oojs-ui",
-      "types-mediawiki"
-    ],
-    // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
-    // and npm install -D @types/node
+		// Environment Settings
+		// See also https://aka.ms/tsconfig/module
+		"module": "preserve",
+		"moduleResolution": "bundler",
+		"paths": {
+			"~/*": ["./src/*"]
+		},
+		"types": [
+			"vite/client",
+			"@types/oojs-ui",
+			"types-mediawiki"
+		],
 
-    // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
+		// Style Options
+		// "noImplicitReturns": true,
+		// "noImplicitOverride": true,
+		// "noUnusedLocals": true,
+		// "noUnusedParameters": true,
+		// "noFallthroughCasesInSwitch": true,
+		// "noPropertyAccessFromIndexSignature": true,
 
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
+		// Recommended Options
+		"strict": true,
+		"exactOptionalPropertyTypes": true,
+		// Stricter Typechecking Options
+		"noUncheckedIndexedAccess": true,
+		"declaration": true,
+		"declarationMap": true,
 
-    // Style Options
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
+		// For nodejs:
+		// "lib": ["esnext"],
+		// "types": ["node"],
+		// and npm install -D @types/node
 
-    // Recommended Options
-    "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
-  }
+		// Other Outputs
+		"sourceMap": true,
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+		"noUncheckedSideEffectImports": true,
+		"skipLibCheck": true
+	}
 }

@@ -5,10 +5,16 @@
   "type": "module",
   "packageManager": "pnpm@10.24.0",
   "devDependencies": {
+    "@ariesclark/eslint-config": "^3.1.1",
     "@types/oojs-ui": "^0.49.4",
+    "@unocss/eslint-plugin": "^66.5.10",
+    "eslint": "^9.39.2",
+    "eslint-plugin-format": "^1.1.0",
     "types-mediawiki": "^2.0.0",
     "typescript": "^5.9.3",
-    "vite": "8.0.0-beta.2"
+    "vite": "8.0.0-beta.2",
+    "vite-plugin-resolve": "^2.5.2",
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "dependencies": {
     "@fontsource-variable/exo-2": "^5.2.8",

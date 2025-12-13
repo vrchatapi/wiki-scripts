@@ -1,4 +1,4 @@
-var script = document.createElement("script");
+const script = document.createElement("script");
 
 script.setAttribute("defer", "defer");
 script.setAttribute("data-domain", "wiki.vrchat.com");
@@ -17,8 +17,8 @@ script.setAttribute("event-is-logged-in", String(mw.config.get("wgUserName") !==
 const wgUserGroups = mw.config.get("wgUserGroups")!;
 
 const maintainer = wgUserGroups.includes("community-mod")
-  || wgUserGroups.includes("moderator")
-  || wgUserGroups.includes("sysop")
+	|| wgUserGroups.includes("moderator")
+	|| wgUserGroups.includes("sysop");
 
 script.setAttribute("event-is-maintainer", String(maintainer));
 
