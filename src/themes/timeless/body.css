@@ -1,8 +1,8 @@
 /* 😺 ....🍷??????? */
 @media screen {
-	a.new,
-	.new a {
-		color: var(--red);
+	a.new.new,
+	.new.new a {
+		color: var(--red) !important;
 	}
 }
 
